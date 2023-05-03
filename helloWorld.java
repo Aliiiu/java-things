@@ -1,21 +1,17 @@
-import java.util.Scanner;
+class Person {
+  String name;
+  int age;
 
+  void speak() {
+    System.out.println("My name is: " + name + " and I am " + age + " years old");
+  }
+}
 public class helloWorld{
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-
-    System.out.println("Enter a command: ");
-    String value = input.nextLine();
-    switch(value){
-      case "start":
-        System.out.println("Machine started!");
-        break;
-      case "stop":
-        System.out.println("Machine Stopped");
-        break;
-      default:
-        System.out.println("Command not found");
-    }
+    Person person1 = new Person();
+    person1.name = "Aliu Salaudeen";
+    person1.age = 20;
+    person1.speak();
 
   }
 }
